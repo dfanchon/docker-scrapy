@@ -6,7 +6,7 @@ FROM ubuntu:trusty
 
 RUN apt-get update; \
     apt-get install -y \
-      python python-pip python-dev libxml2-dev libxslt-dev libffi-dev libssl-dev
+      python python-pip python-dev libxml2-dev libxslt-dev libffi-dev libssl-dev git
 
 RUN pip install lxml && pip install pyopenssl && pip install Scrapy
 
